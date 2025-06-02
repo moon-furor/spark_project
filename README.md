@@ -22,3 +22,6 @@ https://ru.hexlet.io/blog/posts/how-to-learn-sicp
 https://probusiness.io/do_it/422-s-chego-nachat-rabotu-nad-proektom-6-obyazatelnykh-deystviy.html#
 https://skillbox.ru/media/management/zachem-nuzhna-struktura-proekta-i-kak-sobrat-eye-za-sem-shagov-razbiraem-na-primere/
 https://vc.ru/services/109661-s-chego-nachinaetsya-lyuboi-proekt
+
+язык разметки Markdown: шпаргалка по синтаксису с примерами
+https://skillbox.ru/media/code/yazyk-razmetki-markdown-shpargalka-po-sintaksisu-s-primerami/
