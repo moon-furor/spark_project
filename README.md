@@ -1,4 +1,4 @@
-<h1>Project Spark</h1>
+<h1>Spark Project</h1>
 
 <h2>Цель</h2>
 
