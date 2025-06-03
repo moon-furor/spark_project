@@ -136,7 +136,7 @@ x[-2]
 ```
 ```python
 x[1:-1]
-['secon', 'third']
+['second', 'third']
 ```
 ```python
 x[0:3]
