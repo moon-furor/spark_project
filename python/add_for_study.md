@@ -16,3 +16,6 @@ operators `in`, `+`, `*`
 statement `del`
 
 method of lists `appernd`, `count`, `extend`, `index`, `insert`, `pop`, `remove`, `reverse`, `sort`
+
+methods of tuples `count`, `index`
+
