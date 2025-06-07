@@ -275,3 +275,20 @@ x.get(4, "not available")
 
 ## 3.2.6 Sets, frozensets
 
+A set in Python is an unordered collection of objects, used in situations where membership and uniqueness in the set are important. Frozensets are similar to sets, but once created are immutable.
+
+```python
+>>> x = set([1, 2, 3, 1, 3, 5])
+>>> x
+[1, 2, 3, 1, 3, 5]
+```
+```python
+>>> 1 in x
+True
+```
+```python
+>>> 4 in x
+False
+```
+
+## 3.2.7 File objects
