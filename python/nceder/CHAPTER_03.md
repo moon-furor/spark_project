@@ -254,3 +254,24 @@ Placing an `f` in front of a string #2 inserts the values of variables or expres
 the value of e is: 2.718
 ```
 ## 3.2.5 Dictionaries
+
+Keys must me of immutable type #1, including numbers, string and tuples. Values can be any kind of object, including mutable types such as lists and dictionaries.
+
+```python
+>>> x = {1: "one", 2: "two"}
+>>> x["first"] = "one"
+>>> x[("Delorme", "Ryan", 1995)] = (1, 2, 3)
+>>> list(x.key())
+[1, 2, 'first', ('Delorme', 'Ryan', 1995)]
+```
+If you try to access the value of a key thet isn't in the dictionary, a `KeyError` exception is raised. To avoid this error, the dictionary method `get` #2 optionally returns a user-definable value when a key isn't in a dictionary.
+
+```python
+x.get(1, "not available")
+'one'
+x.get(4, "not available")
+'not available'
+```
+
+## 3.2.6 Sets, frozensets
+
