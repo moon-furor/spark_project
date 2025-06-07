@@ -213,3 +213,44 @@ list(x)
 ```
 ## 3.2.4 Strings
 
+String processing is one of Python's strength. They are many options for delimiting strings:
+
+```python
+"A string in double quotes can contain 'single quote' characters."
+'A string in single quotes can contain "double quote" characters.'
+'''\tA string which starts with a tab; ends with a newline character.\n'''
+"""This is a triple double quoted string - triple quoted strings (single
+   or double quoted) are only kind that can contain real newlines."""
+   
+'This is a triple double quoted string - triple quoted strings (single\n   or double quoted) are only kind that can contain real newlines.'
+```
+
+Strongs have several methods to work with their contents...
+```python
+x = "live and     let \t   \tlive"
+x.split()
+['live', 'and', 'let', 'live']
+```
+```python
+x.replace("    let \t   \tlive", "enjoy life")
+'live and enjoy life'
+```
+The `re` library module also contains functions for working with string:
+```python
+import re
+regexp = re.compile(r"[\t ]+")
+'live and let live'
+```
+The print function outputs strings. Other Python data types can be easily converted to string and formatted:
+```python
+e = 2.718
+x = [1, "two", 3, 4.0, ["a", "b"], (5, 6)]
+The constant e is: 2.718 and the list x is: [1, 'two', 3, 4.0, ['a', 'b'], (5, 6)]
+```
+Objects are automatically converted to string representations for printing #1.
+Placing an `f` in front of a string #2 inserts the values of variables or expressions in `{}` into the string.
+```python
+>>> print(f"the value of e is: {e}")
+the value of e is: 2.718
+```
+## 3.2.5 Dictionaries
