@@ -292,3 +292,34 @@ False
 ```
 
 ## 3.2.7 File objects
+
+A file is accessed through a Python file object:
+
+```python
+>>> f = open("myfile", "w")
+>>> f.write("First line with necessary newline file\n")
+46
+>>> f.write("Second line to write to the file\n")
+33
+>>> f.close()
+>>> f = open("myfile", "r")
+>>> line1 = f.readline()
+>>> line2 = f.readline()
+>>> f.close()
+>>> print(line1, line2)
+First line with necessesary newline character
+ Second line to write to the file
+```
+```python
+>>> import os
+>>> directory = os.getcwd()
+>>> print(directory)
+/content
+```
+```python
+>>> filename = os.path.join(directory, "myfile")
+>>> print(filename)
+First line with necessesary newline character
+
+>>> f.close()
+```
