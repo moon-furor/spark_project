@@ -39,7 +39,8 @@ checkForCmdInPath() {
     fi
 }
 
-# : <<'EOS'
+# Для отключения следующего кода используется EOS вместо стандартного комментирования
+: <<'EOS'
 if [ $# -ne 1 ] ; then
     echo "Usage: $0 command" >&2
     exit 1
@@ -53,4 +54,4 @@ case $? in
 esac
 
 exit 0
-# EOS
+EOS
