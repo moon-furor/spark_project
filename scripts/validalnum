@@ -1,0 +1,29 @@
+#!/bin/bash
+# validalphanum - проверяет, содержит ли строка только
+# алфавитно-цифровые симваолы
+
+validAlphaNum() {
+    # Проверка аргумента: возвращает 0, если все символы в строке являются
+    # буквами верхнего/нижнего регистра или цифрами; иначе возвращает 1
+
+    # Удалить все недопустимые символы
+    validchars="$(echo $1 | sed -e 's/[^[:alnum:]]//g')"
+
+    if [ "$validchars" = "$1" ] ; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+/bin/echo -n "Enter input: "
+read input
+
+if ! validAlphaNum "$input" ; then
+    echo "Please enter only letters and numbers."
+    exit 1
+else
+    echo "Input is valid."
+fi
+
+exit 0
