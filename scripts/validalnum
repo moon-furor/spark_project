@@ -16,6 +16,7 @@ validAlphaNum() {
     fi
 }
 
+: <<'EOS'
 /bin/echo -n "Enter input: "
 read input
 
@@ -27,3 +28,4 @@ else
 fi
 
 exit 0
+EOS
